@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(236, 149, 149);
+    text-align: center;
+}
+#items{
+    list-style-type: none;
+    padding: 0;
+}
+.Item{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid black;
+    margin: 5px;
+}

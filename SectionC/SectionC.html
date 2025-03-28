@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Number one -->
+     <h2>Reversing strings</h2>
+     <form id="form">
+       <label for="Stringinput">Enter a string: </label> <br> <br>
+       <input type="text" id="Stringinput" placeholder="Enter string you want to reverse:" required> <br> <br>
+       <button type="submit">Reverse the string</button>
+     </form>
+     <p id="reverse"></p>
+     <script>
+       function reverseString(str) {
+         return str.split('').reverse().join('');
+       }
+       document.getElementById('form').addEventListener('submit', function(event) {
+         event.preventDefault(); 
+         let inputStr = document.getElementById('Stringinput').value;
+         let reversedStr = reverseString(inputStr);
+         document.getElementById('reverse').textContent = `The reversed string will be: ${reversedStr}`;
+       });
+     </script>
+     <!-- Number Two -->
+     <p id="sum"></p>
+     <button onclick="document.getElementById('sum').innerHTML=sum([2,4,6,8])"> Tap to display the sum</button>
+     <script>
+        function sum(){
+            return (x+y);
+        }
+     </script>
+    
+</body>
+</html>
