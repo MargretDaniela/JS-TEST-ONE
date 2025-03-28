@@ -6,13 +6,6 @@ let reversed = word.split('').reverse().join('');
 console.log(isPalindrome("level")); 
 console.log(isPalindrome("hello"));
 
-// Number three 
-function sameOrDifferent(num1, num2) {
-    if (num1 === num2) {
-      return num1 * num2;
-    } else {
-      return num1 + num2;
-    }
-  }
+
   
   
